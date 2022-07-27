@@ -17,8 +17,25 @@ const buscar = (evt) =>{
 
     dibujar(filtrados);
 
+};
+
+const directorPeliculas = () => {
+    let directordePeliculas = resuladosBusqueda.filter((directorPelicula) => {
+        return directorPelicula.director == "Hayao Miyazaki";
+    });
+    dibujar(directordePeliculas);
 }
 
+const productorPeliculas = () => {
+    let productordePeliculas = resuladosBusqueda.filter((productorPelicula) => {
+        return productorPelicula.producer == "Toshio Suzuki";
+    });
+    dibujar(productordePeliculas);
+}
+
+const todito = () => {
+    dibujar(resuladosBusqueda);
+}
 /* <div class="column is-3">
     <div class="card">
         <div class="card-image">
@@ -42,7 +59,7 @@ const dibujar = (peliculas) => {
     peliculas.forEach(pelicula => {
         /* Lectura de cada personaje */
         let div = document.createElement("div");
-        div.classList.add("column", "is-3");
+        div.classList.add("column", "is-2");
 
         div.innerHTML += `  <div class="card" data-id="${pelicula.id}">
                                 <div class="card-image">
@@ -65,3 +82,18 @@ const dibujar = (peliculas) => {
 }
 
 document.querySelector("#busqueda").addEventListener("keyup", buscar);
+document.querySelector("#toditos").addEventListener("click", todito);
+document.querySelector("#director").addEventListener("click", directorPeliculas);
+document.querySelector("#productores").addEventListener("click", productorPeliculas);
+
+
+
+// let ordenZA = document.querySelector('#ordenAZ');
+
+// ordenZA.addEventListener("click", (evt) => {
+//     evt.preventDefault();
+//     document.querySelector("#container").value = "";
+//     resuladosBusqueda.reverse();
+
+//     dibujar(resuladosBusqueda);
+// });

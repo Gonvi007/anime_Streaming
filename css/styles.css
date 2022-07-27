@@ -1,3 +1,16 @@
 .image img {
     object-fit: cover;
 }
+
+body {
+    background-image: url(/img/wallhaven-8xdk62.jpg);
+    
+}
+.subtitulos {
+    /* background-color: wheat; */
+    color: white;
+}
+.is-rounded {
+    width: 40%;
+    margin: 50px 0px 0px 50px;
+}

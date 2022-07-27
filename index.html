@@ -14,10 +14,11 @@
 
     <section class="section">
         <div class="container">
-          <img src="./img/logo.svg" alt="Logo Studio Ghibli">
             <div class="my-5">
                 <div class="control has-icons-right">
-                    <input class="input is-rounded" type="email" id="busqueda" placeholder="Buscar...">
+                    
+          <img src="./img/logo.svg" alt="Logo Studio Ghibli">
+                    <input class="input is-rounded" autocomplete="off" type="email" id="busqueda" placeholder="Buscar...">
                     <span class="icon is-small is-right">
                       <i class="fas fa-search"></i>
                     </span>
@@ -26,14 +27,19 @@
 
             <div class="tabs">
                 <ul>
-                  <li class="is-active"><a>Todos</a></li>
-                  <li><a>A-Z</a></li>
-                  <li><a>Z-A</a></li>
-                  <li><a>De ficción</a></li>
+                  <li class="is-active"><a href="#" id="toditos">Todos</a></li>
+                  <li><a class="subtitulos" href="#" id="productores">Productor sao Takahata</a></li>
+                  <li><a class="subtitulos"  href="#" id="director">Directore Hayao Miyazaki</a></li>
+                  <!-- <li><a  href="#" id="hombres">Hombres</a></li>
+                  <li><a  href="#" id="mujeres">Mujeres</a></li> -->
+                  <!-- <li><a href="#" id="lugar">Lugar</a></li> -->
+                  <!-- <li><a href="#" id="especies">Especies</a></li> -->
                 </ul>
             </div>
         </div>
         <div id="resultadoPelicula" class="mt-5 columns is-multiline">
+
+            
             <!-- <div class="column is-3">
                 <div class="card">
                     <div class="card-image">
@@ -53,5 +59,6 @@
     </section>
     
     <!-- <script src="./js/main.js"></script> -->
+    <!-- <script src="./js/people.js"></script> -->
 </body>
 </html>
