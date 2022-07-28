@@ -50,7 +50,25 @@ const todito = () => {
         </div>
 
     </div>
-</div> */
+</div> 
+
+
+
+
+
+    <div class="contenedor">
+        <figure>
+            <img src="./img/wallhaven-8xdk62.jpg" alt="imagen de Totoro">
+            <div class="capa">
+                <h3>Slee Dw</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio minus labore explicabo! Optio!</p>
+            </div>
+        </figure>
+    </div>
+
+
+
+*/
 
 // function dibujar () {}
 const dibujar = (peliculas) => {
@@ -63,15 +81,18 @@ const dibujar = (peliculas) => {
 
         div.innerHTML += `  <div class="card" data-id="${pelicula.id}">
                                 <div class="card-image">
-                                    <figure class="image is-3by5">
-                                    <img src="${pelicula.image}" alt="Placeholder image">
+                                    <figure class="image figureHover is-3by5">
+                                    <img onmouseout="" src="${pelicula.image}" alt="Placeholder image">
                                     </figure>
                                 </div>
-                                <div class="card-content">
-                                    <p><b>${pelicula.title}</b></p>
-                                    <p><b>${pelicula.original_title}</b></p>
-    
-                                    <p>${pelicula.description}</p>
+                                <div class="capa">
+                                    <div class="card-content">
+                                        <p><b>${pelicula.title}</b></p>
+                                        <p><b>${pelicula.original_title}</b></p>
+
+                                        <p>${pelicula.description}</p>
+                                        
+                                    </div>
                                 </div>
 
                             </div>`;
@@ -97,3 +118,12 @@ document.querySelector("#productores").addEventListener("click", productorPelicu
 
 //     dibujar(resuladosBusqueda);
 // });
+
+// let descripcionBtn = document.getElementById('descripcionBtn');
+// let descripcionTexto = document.getElementById('descripcionTexto');
+
+// descripcionBtn.addEventListener('click', toggleText);
+
+// function toggleText() {
+//     descripcionTexto.classList.toggle('show');
+// }

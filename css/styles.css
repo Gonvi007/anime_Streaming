@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 .image img {
     object-fit: cover;
 }
@@ -13,4 +20,73 @@ body {
 .is-rounded {
     width: 40%;
     margin: 50px 0px 0px 50px;
+}
+
+.descripcion {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contenedor .figureHover {
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+.contenedor .figureHover img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.contenedor .figureHover .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 103, 123, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.contenedor .figureHover:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor .figureHover:hover > .capa h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.contenedor .figureHover .capa h3 {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+.contenedor .figureHover .capa p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+.contenedor .figureHover:hover > img {
+    transform: scale(1.3);
 }
