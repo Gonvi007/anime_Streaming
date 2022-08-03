@@ -54,20 +54,6 @@ const todito = () => {
 
 
 
-
-
-    <div class="contenedor">
-        <figure>
-            <img src="./img/wallhaven-8xdk62.jpg" alt="imagen de Totoro">
-            <div class="capa">
-                <h3>Slee Dw</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio minus labore explicabo! Optio!</p>
-            </div>
-        </figure>
-    </div>
-
-
-
 */
 
 // function dibujar () {}
@@ -90,7 +76,6 @@ const dibujar = (peliculas) => {
                                         <p><b>${pelicula.title}</b></p>
                                         <p><b>${pelicula.original_title}</b></p>
 
-                                        <p>${pelicula.description}</p>
                                         
                                     </div>
                                 </div>
